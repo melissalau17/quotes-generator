@@ -177,7 +177,7 @@ transform: rotateY(0deg);
 
 @media (max-width: 28.75em) {
   body {
-    transform: scale(0.6);
+    transform: scale(0.5);
   }
 }
 
