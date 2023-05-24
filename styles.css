@@ -1,0 +1,199 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #dd5e89, #ffc371 )
+}
+
+.wrapper{
+  width: 605px;
+  height: 430px;
+  background: #ddd6f3;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px #ba5370;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.content {
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  position: absolute;
+}
+
+header {
+  color: #ed4264;
+}
+
+.content :where(i, p, span) {
+  color: #ba5370;
+}
+
+.wrapper header{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper .content{
+  margin: 35px 35px 35px 0;
+}
+.content .quote{
+  display: flex;
+  justify-content: center;
+}
+
+.fa-quote-left, .fa-quote-right {
+  color: #ed4264;
+}
+
+.quote i{
+  font-size: 15px;
+}
+.quote i:first-child{
+  margin: 3px 10px 0 0;
+}
+.quote i:last-child{
+  display: flex;
+  margin: 0 0 3px 10px;
+  align-items: flex-end;
+}
+.quote .text{
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
+.content .author{
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+  justify-content: flex-end;
+}
+.author span:first-child{
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+.wrapper .buttons{
+  border-top: 1px solid #ccc;
+  margin-top: 250px;
+}
+.buttons .features{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+.features ul{
+  display: flex;
+}
+.features ul li{
+  margin: 0 5px;
+  height: 47px;
+  width: 47px;
+  display: flex;
+  cursor: pointer;
+  color: #ed4264;
+  list-style: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ed4264;
+  transition: all 0.3s ease;
+}
+.features ul li:first-child{
+  margin-left: 0;
+}
+ul li:is(:hover, .active){
+  color: #fff;
+  background: #ed4264;
+}
+ul .speech.active{
+  pointer-events: none;
+}
+
+.buttons button{
+  margin-top: -10px;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: #ed4264;
+}
+
+.buttons button:hover, .buttons button:active, .buttons button:focus {
+  color: #ed4264;
+  background: #fff;
+}
+
+.buttons button:is(.active) {
+  color: #ed4264;
+  background: #fff;
+}
+
+.buttons button.loading{
+  opacity: 0.7;
+  pointer-events: none;
+  color: #ed4264;
+  background: #fff;
+}
+
+.block {
+  position: absolute;
+  perspective: 150rem;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.block__main {
+  transition: all .8s ease;
+  backface-visibility: hidden;
+}
+
+.block__back {
+  transform: rotateY(180deg);
+}
+
+.rotateF{
+transform: rotateY(-180deg);
+}
+
+.rotateB{
+transform: rotateY(0deg);
+}
+
+@media (max-width: 28.75em) {
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    transform: scale(0.7);
+  }
+}

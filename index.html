@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quotes Generator</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" 
+          href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+          crossorigin="anonymous"/>
+    </head>
+    <body id="body">
+        <div class="wrapper block">
+          <header>Quote of the Day</header>
+            <div class="content block__main block__front">
+              <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p class="text"></p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="author">
+                <span>__</span>
+                <span class="name"></span>
+              </div>
+            </div>
+            <div class="content block__main block__back">
+              <div class="quote">
+                <i class="fas fa-quote-left"></i>
+                <p class="text"></p>
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="author">
+                <span>__</span>
+                <span class="name"></span>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="features">
+                <ul>
+                  <li class="speech"><i class="fas fa-volume-up"></i></li>
+                  <li class="copy"><i class="fas fa-copy"></i></li>
+                  <li class="twitter"><i class="fab fa-twitter"></i></li>
+                </ul>
+                <button class = "new-quote btn btn-default " 
+                onclick="newQuote()">New Quote</button>
+              </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
