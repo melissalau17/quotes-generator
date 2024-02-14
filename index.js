@@ -63,7 +63,7 @@ const displayQuote = () =>{
 }
   
 // Fetching the quotes from the type.fit API using promises
-fetch("https://type.fit/api/quotes")
+fetch("https://raw.githubusercontent.com/melissalau17/quotes-generator/main/quotes.json")
     .then(function(response) {
         return response.json(); 
     }) // Getting the raw JSON data
